@@ -11,6 +11,7 @@ def _phate(adata):
     adata.obsm["X_emb"] = phate_op.fit_transform(adata.X)
     return adata
 
+
 @method(
     method_name="PHATE (default pre-processing)",
     paper_name="Visualizing Transitions and Structure for Biological Data Exploration",
@@ -23,6 +24,7 @@ def _phate(adata):
 def phate_default(adata):
     sqrt_cpm(adata)
     return _phate(adata)
+
 
 @method(
     method_name="PHATE (scanpy pre-processing)",
