@@ -2,7 +2,6 @@ from ....tools.decorators import method
 from ....tools.normalize import sqrt_cpm
 from ....tools.utils import check_version
 from .preprocessing import preprocess_scanpy
-
 from phate import PHATE
 
 
